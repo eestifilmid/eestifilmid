@@ -1,4 +1,4 @@
-# start.py — filmide ümbernimetamise tööriist
+# Eesti filmide ümbernimetamise tööriist
 
 Skript võrdleb videofaile nimekirjaga ja nimetab need vajadusel ümber õigesse formaati.
 
