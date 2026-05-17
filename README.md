@@ -1,4 +1,4 @@
-# Eesti filmide ümbernimetamise tööriist
+# start.py — filmide ümbernimetamise tööriist
 
 Skript võrdleb videofaile nimekirjaga ja nimetab need vajadusel ümber õigesse formaati.
 
@@ -12,10 +12,10 @@ Skript võrdleb videofaile nimekirjaga ja nimetab need vajadusel ümber õigesse
 ```
 Media/
 ├── Eesti Filmid/
-│   ├── Mingi Film (Some Movie) (2020).mkv
+│   ├── Mingi Film (2020) [Some Movie].mkv
 │   └── ...
 ├── Eesti Multikad/
-│   ├── Ämblikmees (The Spectacular Spider-Man) (2008).mkv
+│   ├── Ämblikmees (2008) [The Spectacular Spider-Man].mkv
 │   └── ...
 └── Scripts/
     ├── start.py
@@ -39,10 +39,10 @@ Eesti tiitel (Inglise tiitel) (aasta) (tmdb)
 Skript nimetab failid ümber järgmisse formaati (TMDb ID failinimi ei sisalda):
 
 ```
-Eesti tiitel (Inglise tiitel) (aasta).mkv
+Eesti tiitel (aasta) [Inglise tiitel].mkv
 ```
 
-- Näide: `Ämblikmees (The Spectacular Spider-Man) (2008).mkv`
+- Näide: `Ämblikmees (2008) [The Spectacular Spider-Man].mkv`
 
 ## Käivitamine
 

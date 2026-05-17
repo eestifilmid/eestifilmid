@@ -26,23 +26,23 @@ def normalize(text: str) -> str:
 def parse_truth_line(line: str):
     """
     Expected:
-    Estonian title (English title) (Year)
+    Estonian title (Year) [English title] {tmdb-12345}
     """
     line = line.strip()
     if not line:
         return None
 
-    m = re.match(r"^(.*?)\s*\((.*?)\)\s*\((\d{4})\)\s*(?:\((\d+)\))?\s*$", line)
+    m = re.match(r"^(.*?)\s*\((\d{4})\)\s*\[([^\]]*)\](?:\s*\{tmdb-(\d+)\})?\s*$", line)
     if not m:
         raise ValueError(f"Could not parse truth line: {line}")
 
     estonian = m.group(1).strip()
-    english = m.group(2).strip()
+    english = m.group(3).strip()
     return {
         "raw": line,
         "estonian": estonian,
         "english": english,
-        "year": m.group(3),
+        "year": m.group(2),
         "tmdb_id": m.group(4),
         "_net": normalize(estonian),
         "_nen": normalize(english),
@@ -105,7 +105,7 @@ def safe_filename(name: str) -> str:
 
 
 def truth_filename(item, extension: str) -> str:
-    name = f"{item['estonian']} ({item['english']}) ({item['year']})"
+    name = f"{item['estonian']} ({item['year']}) [{item['english']}]"
     return safe_filename(name) + extension
 
 
@@ -314,7 +314,7 @@ def main():
         print(f"{wrong_name} Filmi mille pealkiri on nimekirjast erinev")
 
     elif choice == "2":
-        print("\nFaili formaat: Eesti pealkiri (English title) (Aasta)")
+        print("\nFaili formaat: Eesti pealkiri (Aasta) [English title]")
         print("\nSkannimine...")
         movie_files = scan_movies(folder)
         print(f"Leitud {len(movie_files)} videofaili.")
