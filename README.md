@@ -28,11 +28,13 @@ Media/
 `filmid.txt` ja `multikad.txt` — iga film omareal:
 
 ```
-Eesti tiitel (Inglise tiitel) (aasta) (tmdb)
+Eesti tiitel (aasta) [Inglise tiitel] {tmdb-ID}
 ```
 
-- `(tmdb)` on valikuline TMDb ID number
-- Näide: `Ämblikmees (The Spectacular Spider-Man) (2008) (7446)`
+- `{tmdb-ID}` on valikuline TMDb ID — kui puudub, jäetakse välja
+- Näide (TMDb-ga): `Ämblikmees (2008) [The Spectacular Spider-Man] {tmdb-7446}`
+- Näide (ilma TMDb-ta): `Kormoranid ehk Nahkpükse ei pesta (2011) [Farts of Fury]`
+- Formaati txt-failis eraldi ei täpsustata — skript eeldab alati ülaltoodud struktuuri
 
 ## Failinime formaat pärast ümbernimetamist
 
