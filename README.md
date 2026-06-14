@@ -1,13 +1,19 @@
-# start.py — filmide ümbernimetamise tööriist
+# Eesti filmid ja multikad
+
+🎬 **[Sirvi filmide ja multikate nimekirja](https://eestifilmid.github.io/eestifilmid/)**
+
+---
+
+## start.py — filmide ümbernimetamise tööriist
 
 Skript võrdleb videofaile nimekirjaga ja nimetab need vajadusel ümber õigesse formaati.
 
-## Nõuded
+### Nõuded
 
 - Python 3.8 või uuem
 - Muid pakette pole vaja
 
-## Soovituslik kaustade struktuur
+### Soovituslik kaustade struktuur
 
 ```
 Media/
@@ -23,7 +29,7 @@ Media/
     └── multikad.txt
 ```
 
-## Nimekirjafailide formaat
+### Nimekirjafailide formaat
 
 `filmid.txt` ja `multikad.txt` — iga film omareal:
 
@@ -36,7 +42,7 @@ Eesti tiitel (aasta) [Inglise tiitel] {tmdb-ID}
 - Näide (ilma TMDb-ta): `Kormoranid ehk Nahkpükse ei pesta (2011) [Farts of Fury]`
 - Formaati txt-failis eraldi ei täpsustata — skript eeldab alati ülaltoodud struktuuri
 
-## Failinime formaat pärast ümbernimetamist
+### Failinime formaat pärast ümbernimetamist
 
 Skript nimetab failid ümber järgmisse formaati (TMDb ID failinimi ei sisalda):
 
@@ -46,7 +52,7 @@ Eesti tiitel (aasta) [Inglise tiitel].mkv
 
 - Näide: `Ämblikmees (2008) [The Spectacular Spider-Man].mkv`
 
-## Käivitamine
+### Käivitamine
 
 ```
 python3 start.py
