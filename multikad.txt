@@ -232,14 +232,14 @@ Maskeeritud Spioonid (2019) [Spies in Disguise] {tmdb-431693}
 Mavka metsalaul (2023) [Mavka: The Forest Song] {tmdb-459003}
 Megameel (2010) [Megamind] {tmdb-38055}
 Megameel vs. Hukatuse sündikaat (2024) [Megamind vs. the Doom Syndicate] {tmdb-1239251}
-Meie Kangelane (2006) [Everyone's Hero] {tmdb-15213}
-Meisterkokk Mary (2022) [A Greyhound of a Girl] {tmdb-588564}
+Meie kangelane (2006) [Everyone's Hero] {tmdb-15213}
+Meisterkokk Mary (2023) [A Greyhound of a Girl] {tmdb-588564}
 Meistrimehed Pat ja Mat. Suur film (2016) [Pat & Mat in a Movie] {tmdb-376810}
 Merekoletised (2017) [Sea Monsters] {tmdb-530471}
-Merekoletised 2 (2018) [Sea Monsters 2] {tmdb-575410}
+Merekoletised 2 (2019) [Sea Monsters 2] {tmdb-575410}
 Merelaul (2014) [Song of the Sea] {tmdb-110416}
 Mesilane Maia (2014) [Maya the Bee Movie] {tmdb-261103}
-Mesilane Maia Meemängud (2018) [Maya the Bee: The Honey Games] {tmdb-499088}
+Mesilane Maia: Meemängud (2018) [Maya the Bee: The Honey Games] {tmdb-499088}
 Mesilase film (2007) [Bee Movie] {tmdb-5559}
 Metsikud lained (2007) [Surf's Up] {tmdb-9408}
 Metslased (2024) [Savages] {tmdb-589018}
@@ -248,33 +248,33 @@ Miisu Moxy (2025) [Miss Moxy] {tmdb-587357}
 Mina, supervaras (2010) [Despicable Me] {tmdb-20352}
 Mina, supervaras 2 (2013) [Despicable Me 2] {tmdb-93456}
 Mina, supervaras 3 (2017) [Despicable Me 3] {tmdb-324852}
-Mina, supervaras 4 (2024) [Despicable Me 4] {tmdb-519182}
-Minecraft (2025) [A Minecraft Movie] {tmdb-950387}
+Mina, Supervaras 4 (2024) [Despicable Me 4] {tmdb-519182}
+Minecrafti film (2025) [A Minecraft Movie] {tmdb-950387}
 Minu ahvist emme (2021) [The Ape Star] {tmdb-726152}
 Minu iseäralik perekond (2024) [My Freaky Family] {tmdb-974397}
 Minu käpardist õnnehaldjas (2022) [My Fairy Troublemaker] {tmdb-681303}
 Minu naaber Totoro (1988) [My Neighbor Totoro] {tmdb-8392}
 Missioon tiiger (2024) [The Tiger's Apprentice] {tmdb-598387}
-Moana (2016) [Moana] {tmdb-277834}
-Moana 2 (2024) [Moana 2] {tmdb-1241982}
+Vaiana (2016) [Moana] {tmdb-277834}
+Vaiana 2 (2024) [Moana 2] {tmdb-1241982}
 Monty ja tänavapidu (2019) [Monty and the Street Party] {tmdb-603094}
-Mufasa Lõvikuningas (2024) [Mufasa: The Lion King] {tmdb-762509}
-Munade päästmine (2021) [Huevos: Little Rooster's Egg-Cellent Adventure] {tmdb-264419}
+Mufasa: Lõvikuningas (2024) [Mufasa: The Lion King] {tmdb-762509}
+Munade Päästmine (2015) [Huevos: Little Rooster's Egg-Cellent Adventure] {tmdb-264419}
 Muumiad (2023) [Mummies] {tmdb-816904}
 Muumid Rivieral (2014) [Moomins on the Riviera] {tmdb-293271}
-Muumid ja talvine imedemaa (2017) [Moomins and the Winter Wonderland] {tmdb-451044}
-Muumitroll ja Sabatäht (2021) [Comet in Moominland] {tmdb-1612936}
+Muumid Ja Talvine Imedemaa (2017) [Moomins and the Winter Wonderland] {tmdb-451044}
+Muumitroll ja Sabatäht (2026) [Comet in Moominland] {tmdb-1612936}
 Muumitroll ja punane komeet (2010) [Moomins and the Comet Chase] {tmdb-57500}
 Müsteerium Veisemäe kiirrongil (2023) [A Mystery on the Cattle Hill Express] {tmdb-1069806}
 Naksitrallid (1990) [Three Jolly Fellows] {tmdb-1007840}
-Nicolase kostüüm (2020) [A Costume for Nicolas] {tmdb-618748}
+Nicolase kostüüm (2021) [A Costume for Nicolas] {tmdb-618748}
 Niko ja lendavad põhjapõdrad (2012) [Niko 2: Little Brother, Big Trouble] {tmdb-141614}
 Niko: teisele poole virmalisi (2024) [Niko: Beyond the Northern Lights] {tmdb-717196}
-Nils Holgerssoni Imaline Reis (2003) [The Wonderful Adventures of Nils] {tmdb-529667}
+Nils Holgerssoni Imaline Reis (1982) [The Wonderful Adventures of Nils] {tmdb-529667}
 Ninakaru Koaati (2021) [Koati] {tmdb-554594}
-Noore Muumipapa seiklused (2021) [The Exploits of Moominpappa – Adventures of a Young Moomin] {tmdb-844485}
+Noore Muumipapa seiklused (2022) [The Exploits of Moominpappa – Adventures of a Young Moomin] {tmdb-844485}
 Nukatuka metsarahvas (2016) [In the Forest of Huckybucky] {tmdb-429458}
-Nässu (2024) [Hitpig!] {tmdb-756397}
+Searahakütt (2024) [Hitpig!] {tmdb-756397}
 Oglikud (2021) [Welcome to Smelliville] {tmdb-805051}
 Olafi ja lumekuninganna talveseiklus (2017) [Olaf's Frozen Adventure] {tmdb-460793}
 Olly ja piraatide aare (2014) [Dive Olly Dive and the Pirate Treasure] {tmdb-257949}
@@ -289,109 +289,109 @@ Pahupidi (2015) [Inside Out] {tmdb-150540}
 Pahupidi 2 (2024) [Inside Out 2] {tmdb-1022789}
 Pandakaru Aafrikas (2024) [Panda Bear in Africa] {tmdb-676685}
 Paras pähkel 2 (2017) [The Nut Job 2: Nutty by Nature] {tmdb-335777}
-Peeter Paan Eikunagiraamatu otsing (2018) [Peter Pan: The Quest for the Never Book] {tmdb-557181}
+Peeter Paan Eikunagiraamatu Otsing (2018) [Peter Pan: The Quest for the Never Book] {tmdb-557181}
 Peletiste perekond (2017) [Monster Family] {tmdb-454699}
 Peter Rabbit (2018) [Peter Rabbit] {tmdb-381719}
 Piia seiklused (2021) [Pil's Adventures] {tmdb-676705}
 Pipi seiklused lõunamerel (1999) [Pippi's Adventures on the South Seas] {tmdb-76796}
-Pippi Longstocking (1997) [Pippi Longstocking] {tmdb-12630}
+Pipi Pikksukk (1997) [Pippi Longstocking] {tmdb-12630}
 Pisipäkk (2018) [Smallfoot] {tmdb-446894}
 Planeet 51 (2009) [Planet 51] {tmdb-16866}
-Politseiauto Pelle (2009) [Ploddy the Police Car Makes a Splash] {tmdb-166731}
+Politseiauto Pelle (2010) [Ploddy the Police Car Makes a Splash] {tmdb-166731}
 Printsess Emmy (2019) [Princess Emmy] {tmdb-532293}
 Printsess ja draakon (2018) [The Princess and the Dragon] {tmdb-518604}
 Printsess ja konn (2009) [The Princess and the Frog] {tmdb-10198}
-Prääks Prääks Kluuk (2018) [Duck Duck Goose] {tmdb-375107}
+Prääks prääks Kluuk (2018) [Duck Duck Goose] {tmdb-375107}
 Punamütsike kurjuse vastu (2011) [Hoodwinked Too! Hood VS. Evil] {tmdb-57089}
 Punane pandaplika (2022) [Turning Red] {tmdb-508947}
 Päkapikupuu (1991) [The Dwarf Tree] {tmdb-1112461}
 Päästjad (2015) [Saving Goola] {tmdb-353218}
 Pääsuke Manou (2019) [Manou the Swift] {tmdb-522887}
-Põgenemine planeedilt Maa (2013) [Escape from Planet Earth] {tmdb-68179}
+Põgenemine Planeedilt Maa (2013) [Escape from Planet Earth] {tmdb-68179}
 Põrsas Ruudi (2022) [Oink] {tmdb-916423}
 Pöial Liisi (1994) [Thumbelina] {tmdb-28032}
 Pöörane robot (2024) [The Wild Robot] {tmdb-1184918}
-Ralf lõhub interneti Lammutaja Ralf 2 (2018) [Ralph Breaks the Internet] {tmdb-404368}
+Ralf lõhub interneti (2018) [Ralph Breaks the Internet] {tmdb-404368}
 Rango (2011) [Rango] {tmdb-44896}
 Rapuntsel (2010) [Tangled] {tmdb-38757}
 Ratatouille (2007) [Ratatouille] {tmdb-2062}
 Raudhiiglane (1999) [The Iron Giant] {tmdb-10386}
 Raya ja viimane lohe (2021) [Raya and the Last Dragon] {tmdb-527774}
-Rebane ja Jänes päästavad metsa (2024) [Fox and Hare Save the Forest] {tmdb-1061785}
+Rebane ja jänes päästavad metsa (2024) [Fox and Hare Save the Forest] {tmdb-1061785}
 Rikkis Ron (2021) [Ron's Gone Wrong] {tmdb-482321}
 Rio (2011) [Rio] {tmdb-46195}
 Rio 2 (2014) [Rio 2] {tmdb-172385}
 Robinson Crusoe (2016) [Robinson Crusoe] {tmdb-368940}
 Robotid (2005) [Robots] {tmdb-9928}
-Rohutirts ja sipelgas (2023) [The Grasshopper and the Ants] {tmdb-81077}
-Rokikoer 2: Pargikontsert (2021) [Rock Dog 2: Rock Around the Park] {tmdb-812204}
-Rokikoer 3: Laululahing (2022) [Rock Dog 3: Battle the Beat] {tmdb-1054972}
-Ruby Gillman teismeline merekoletis (2023) [Ruby Gillman, Teenage Kraken] {tmdb-1040148}
+Rohutirts ja sipelgas (1934) [The Grasshopper and the Ants] {tmdb-81077}
+Rokikoer 2 (2021) [Rock Dog 2: Rock Around the Park] {tmdb-812204}
+Rokikoer 3 (2023) [Rock Dog 3: Battle the Beat] {tmdb-1054972}
+Ruby Gillman: teismeline merekoleti (2023) [Ruby Gillman, Teenage Kraken] {tmdb-1040148}
 Röövitud Printsess (2018) [The Stolen Princess] {tmdb-463116}
 Rüütel Rooste (2013) [Knight Rusty] {tmdb-160873}
 SCOOB! (2020) [Scoob!] {tmdb-385103}
-Saabastega Kass (2011) [Puss in Boots] {tmdb-417859}
-Saabastega kass Viimane soov (2022) [Puss in Boots: The Last Wish] {tmdb-315162}
-Sabata Kass (2018) [Pelle Svanslös] {tmdb-632764}
-Sabatäht muumiorus (1992) [Comet in Moominland] {tmdb-70089}
-SamSam (2019) [SamSam] {tmdb-589973}
+Saabastega kass (2011) [Puss in Boots] {tmdb-417859}
+Saabastega kass: Viimane soov (2022) [Puss in Boots: The Last Wish] {tmdb-315162}
+Sabata Kass (2020) [Pelle Svanslös] {tmdb-632764}
+Muumitroll ja Sabatäht (1992) [Comet in Moominland] {tmdb-70089}
+SamSam (2020) [SamSam] {tmdb-589973}
 Sarila legend (2013) [The Legend of Sarila] {tmdb-233423}
 Seitse pöialpoissi ja punased võlukingad (2019) [Red Shoes and the Seven Dwarfs] {tmdb-486589}
 Sherlock Gnomes (2018) [Sherlock Gnomes] {tmdb-370567}
 Shrek 1 (2001) [Shrek] {tmdb-808}
 Shrek 2 (2004) [Shrek 2] {tmdb-809}
-Shrek 3 (2007) [Shrek the Third] {tmdb-810}
+Shrek Kolmas (2007) [Shrek the Third] {tmdb-810}
 Shrek nüüd ja igavesti (2010) [Shrek Forever After] {tmdb-10192}
 Siil Sonic (2020) [Sonic the Hedgehog] {tmdb-454626}
 Siil Sonic 2 (2022) [Sonic the Hedgehog 2] {tmdb-675353}
 Siil Sonic 3 (2024) [Sonic the Hedgehog 3] {tmdb-939243}
 Siit tuleb võlur Torss (2018) [A Wizard's Tale] {tmdb-502259}
-Simpsonite film (2007) [The Simpsons Movie] {tmdb-35}
+Simpsonite Film (2007) [The Simpsons Movie] {tmdb-35}
 Sipsik (2020) [Raggie] {tmdb-586947}
 Sirkleen, Koko ja metsik Ninasarvik (2018) [Circleen, Coco and the Wild Rhinoceros] {tmdb-490406}
 Smurfid (2011) [The Smurfs] {tmdb-41513}
-Smurfid Kadunud külake (2017) [Smurfs: The Lost Village] {tmdb-137116}
+Smurfid: Kadunud külake (2017) [Smurfs: The Lost Village] {tmdb-137116}
 Smurfide suur film (2025) [Smurfs] {tmdb-936108}
-Snoopy ja Charlie Brown Tobukeste film (2015) [The Peanuts Movie] {tmdb-227973}
+Snoopy ja Charlie Brown: Tobukeste film (2015) [The Peanuts Movie] {tmdb-227973}
 Soov (2023) [Wish] {tmdb-1022796}
 Spirit Taltsutamatu (2021) [Spirit Untamed] {tmdb-637693}
-Ssh Suur Sõbralik Hiiglane (2016) [The BFG] {tmdb-267935}
+SSH: Suur sõbralik hiiglane (2016) [The BFG] {tmdb-267935}
 Super Charlie (2024) [Super Charlie] {tmdb-1218032}
 Super Mario Bros. Film (2023) [The Super Mario Bros. Movie] {tmdb-502356}
 Super-Karvapall päästab tuleviku (2022) [Super Furball Saves the Future] {tmdb-683361}
 Supervana (2024) [SuperKlaus] {tmdb-1100998}
-Suur Seiklus (2019) [The Big Trip] {tmdb-533715}
+Suur seiklus (2019) [The Big Trip] {tmdb-533715}
 Suur maalritöö (2013) [The Great Painter] {tmdb-551284}
-Suur vapper panda (2011) [Little Big Panda] {tmdb-65714}
+Suur Vapper Panda (2011) [Little Big Panda] {tmdb-65714}
 Suur võidusõit läbi Euroopa (2025) [Grand Prix of Europe] {tmdb-1316147}
 Sõõrud (2021) [Extinct] {tmdb-664236}
 Taevast sajab lihapalle (2009) [Cloudy with a Chance of Meatballs] {tmdb-22794}
-Taevast sajab lihapalle 2 (2013) [Cloudy with a Chance of Meatballs 2] {tmdb-109451}
+Taevast Sajab Lihapalle 2 (2013) [Cloudy with a Chance of Meatballs 2] {tmdb-109451}
 Tafiti kõrbeseiklus (2025) [Tafiti: Across the Desert] {tmdb-1437198}
 Teddy jõulud (2022) [Teddy's Christmas] {tmdb-1020969}
-Teismelised ninjakilpkonnad Mutantide möll (2023) [Teenage Mutant Ninja Turtles: Mutant Mayhem] {tmdb-614930}
-The Amazing Maurice (2022) [The Amazing Maurice] {tmdb-676710}
-The Road to El Dorado (2000) [The Road to El Dorado] {tmdb-10501}
+Teismelised ninjakilpkonnad: Mutantide möll (2023) [Teenage Mutant Ninja Turtles: Mutant Mayhem] {tmdb-614930}
+Hämmastav Maurice (2022) [The Amazing Maurice] {tmdb-676710}
+Tee El Doradosse (2000) [The Road to El Dorado] {tmdb-10501}
 Tillukesed jõulud (2017) [Tiny Christmas] {tmdb-483863}
 Titina (2022) [Titina] {tmdb-678320}
 Tom ja Fluffy (1997) [Tom and Fluffy] {tmdb-250674}
 Tony, Shelly ja maagiline valgus (2023) [Tony, Shelly and the Magic Light] {tmdb-947650}
-Toomas ja sõbrad: Jõulukirjarong (2024) [Thomas & Friends: The Mystery of Lookout Mountain] {tmdb-1053812}
+Toomas ja sõbrad: Jõulukirjarong (2022) [Thomas & Friends: The Mystery of Lookout Mountain] {tmdb-1053812}
 Tossud (2025) [Sneaks] {tmdb-1084153}
-Toy Story (1995) [Toy Story] {tmdb-862}
+Lelulugu (1995) [Toy Story] {tmdb-862}
 Trollid (2016) [Trolls] {tmdb-136799}
 Trollid 2 (2020) [Trolls World Tour] {tmdb-446893}
 Trollid pundis koos (2023) [Trolls Band Together] {tmdb-901362}
 Tuhkatriinu (1950) [Cinderella] {tmdb-11224}
 Tuhkatriinu 2 (2002) [Cinderella II: Dreams Come True] {tmdb-14128}
-Tuhkatriinu ja nõiutud prints (2018) [Cinderella and the Secret Prince] {tmdb-543583}
+Tuhkatriinu Ja Nõiutud Prints (2018) [Cinderella and the Secret Prince] {tmdb-543583}
 Tulesüda (2022) [Fireheart] {tmdb-778810}
 Tulnukad peas (2023) [Headspace] {tmdb-1065671}
 Turbo (2013) [Turbo] {tmdb-77950}
-Turu: üks isemoodi kana (2019) [Turu, the Wacky Hen] {tmdb-653247}
+Turu: üks isemoodi kana (2020) [Turu, the Wacky Hen] {tmdb-653247}
 Tähekoer ja Turbokass (2019) [StarDog and TurboCat] {tmdb-515789}
-Täitsa Super! (2022) [Just Super] {tmdb-947507}
-Tüdruk nimega Willow (2024) [Woodwalkers] {tmdb-1241894}
+Täitsa super! (2022) [Just Super] {tmdb-947507}
+Tüdruk nimega Willow (2025) [A Girl Named Willow] {tmdb-1176932}
 Uhke printsess (2024) [The Proud Princess] {tmdb-1134680}
 Unenägude meistrid (2020) [Dreambuilders] {tmdb-586742}
 Vaimudest viidud (2001) [Spirited Away] {tmdb-129}
@@ -404,28 +404,28 @@ Varjatud kuningriik (2013) [Epic] {tmdb-116711}
 Veealune seiklus (2017) [Deep] {tmdb-430474}
 Veider maailm (2022) [Strange World] {tmdb-877269}
 Vesi peale (2006) [Flushed Away] {tmdb-11619}
-Viis Legendi (2012) [Rise of the Guardians] {tmdb-81188}
+Viis legendi (2012) [Rise of the Guardians] {tmdb-81188}
 Volga ja Sultani naine (2010) [Volga and The Sultan's Wife] {tmdb-395513}
 Vooluga kaasa (2024) [Flow] {tmdb-823219}
 Väike Allan. Inimantenn (2022) [The Little Alien] {tmdb-885021}
-Väike kummitus Laaban on tagasi. Film (2024) [Lilla spöket Laban spökar igen] {tmdb-1360718}
-Väike merineitsi Arieli lugu (2008) [The Little Mermaid: Ariel's Beginning] {tmdb-13676}
+Väike kummitus Laaban on tagasi (2024) [Lilla spöket Laban spökar igen] {tmdb-1360718}
+Väike Merineitsi Arieli Lugu (2008) [The Little Mermaid: Ariel's Beginning] {tmdb-13676}
 Väike prints (2015) [The Little Prince] {tmdb-309809}
 Väike tibu (2005) [Chicken Little] {tmdb-9982}
 Väike tont (2013) [The Little Ghost] {tmdb-235044}
-Väikese kukepoisi suur seiklus (2015) [Huevos: Little Rooster's Egg-Cellent Adventure] {tmdb-264419}
-Väikesed Superlennukid Täiskiirusel (2023) [Super Wings: Maximum Speed] {tmdb-1148189}
+Munade Päästmine (2015) [Huevos: Little Rooster's Egg-Cellent Adventure] {tmdb-264419}
+Väikesed superlennukid: Täiskiirusel. Film (2023) [Super Wings: Maximum Speed] {tmdb-1148189}
 Väikesed kangelased (2023) [Rally Road Racers] {tmdb-1008102}
 Välk (2008) [Bolt] {tmdb-13053}
 Võimatu Munamissioon (2022) [Rabbit Academy: Mission Eggpossible] {tmdb-888322}
 Võlumaja (2013) [The House of Magic] {tmdb-202575}
-Wall-E (2008) [WALL·E] {tmdb-10681}
+WALL·E (2008) [WALL·E] {tmdb-10681}
 Wicked (2024) [Wicked] {tmdb-402431}
-Willy ja koletisplaneet (2019) [Astro Kid] {tmdb-580600}
+Willy Ja Koletisplaneet (2019) [Astro Kid] {tmdb-580600}
 Willy ja vinged autod (2018) [Wheely] {tmdb-488397}
 Zootropolis (2016) [Zootopia] {tmdb-269149}
 Zootropolis 2 (2025) [Zootopia 2] {tmdb-1084242}
 Ämblikmees (2008) [The Spectacular Spider-Man: Attack of the Lizard] {tmdb-399712}
-Ämblikmees Uus universum (2018) [Spider-Man: Into the Spider-Verse] {tmdb-324857}
+Ämblikmees: uus universum (2018) [Spider-Man: Into the Spider-Verse] {tmdb-324857}
 Üle heki (2006) [Over the Hedge] {tmdb-7518}
 Üles (2009) [Up] {tmdb-14160}
