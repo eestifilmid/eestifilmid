@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
 <title>Multikad</title>
 <style>
   :root {
@@ -190,7 +191,6 @@
   <a href="https://github.com/eestifilmid/eestifilmid" target="_blank" rel="noopener noreferrer">eestifilmid/eestifilmid</a>
 </footer>
 <script>
-  const API_KEY = "example";
   const IMG_BASE = "https://image.tmdb.org/t/p/w300";
   const DATA_URL = "https://raw.githubusercontent.com/eestifilmid/eestifilmid/refs/heads/main/multikad.txt";
   const LINE_RE = /^(.*?)\s*\((\d{4})\)\s*\[(.*?)\]\s*\{tmdb-(\d+)\}\s*$/;
@@ -248,7 +248,7 @@
     let posterPath = posterCacheGet(id);
     if (posterPath === undefined) {
       try {
-        const res = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`);
+        const res = await fetch(`https://api.themoviedb.org/3/movie/${id}`);
         const data = await res.json();
         posterPath = data.poster_path || "";
       } catch (e) {

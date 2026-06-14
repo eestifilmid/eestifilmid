@@ -378,7 +378,6 @@ Tom ja Fluffy (1997) [Tom and Fluffy] {tmdb-250674}
 Tony, Shelly ja maagiline valgus (2023) [Tony, Shelly and the Magic Light] {tmdb-947650}
 Toomas ja sõbrad: Jõulukirjarong (2022) [Thomas & Friends: The Mystery of Lookout Mountain] {tmdb-1053812}
 Tossud (2025) [Sneaks] {tmdb-1084153}
-Lelulugu (1995) [Toy Story] {tmdb-862}
 Trollid (2016) [Trolls] {tmdb-136799}
 Trollid 2 (2020) [Trolls World Tour] {tmdb-446893}
 Trollid pundis koos (2023) [Trolls Band Together] {tmdb-901362}
