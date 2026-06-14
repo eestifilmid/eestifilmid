@@ -27,24 +27,27 @@ def parse_truth_line(line: str):
     """
     Expected:
     Estonian title (Year) [English title] {tmdb-12345}
+    Estonian title: Subtitle (Year)
+    Estonian title
     """
     line = line.strip()
     if not line:
         return None
 
-    m = re.match(r"^(.*?)\s*\((\d{4})\)\s*\[([^\]]*)\](?:\s*\{tmdb-(\d+)\})?\s*$", line)
+    m = re.match(r"^(.*?)(?:\s*\((\d{4})\))?(?:\s*\[([^\]]*)\])?(?:\s*\{tmdb-(\d+)\})?\s*$", line)
     if not m:
         raise ValueError(f"Could not parse truth line: {line}")
 
     estonian = m.group(1).strip()
-    english = m.group(3).strip()
+    english = (m.group(3) or "").strip()
+    estonian_match_text = estonian.replace(":", " ")
     return {
         "raw": line,
         "estonian": estonian,
         "english": english,
         "year": m.group(2),
         "tmdb_id": m.group(4),
-        "_net": normalize(estonian),
+        "_net": normalize(estonian_match_text),
         "_nen": normalize(english),
     }
 
@@ -71,33 +74,51 @@ def _title_match(ntitle, norm_t):
 
 
 def match_file_to_truth(file_info, truth_items):
+    """Pick the best-scoring truth item, not just the first one that matches.
+
+    A file's title may be a substring of several truth titles (e.g. "Suur
+    Seiklus" inside "Väikese kukepoisi suur seiklus"). An exact title match
+    must win over such partial/substring matches regardless of list order,
+    with year proximity and length closeness as tie-breakers.
+    """
     ntitle = file_info["_ntitle"]
     file_year = int(file_info["year"]) if file_info["year"] else None
 
-    def year_ok(truth_year_str):
-        if file_year is None:
-            return True
-        return abs(file_year - int(truth_year_str)) <= 1
+    def year_score(truth_year_str):
+        if file_year is None or truth_year_str is None:
+            return 0
+        diff = abs(file_year - int(truth_year_str))
+        if diff == 0:
+            return 2
+        if diff <= 1:
+            return 1
+        return -1
 
-    # Pass 1 & 2: title match with year constraint (±1)
-    for item in truth_items:
-        if _title_match(ntitle, item["_nen"]) and year_ok(item["year"]):
-            return {"item": item, "score": 1.0, "title_score": 1.0}
-
-    for item in truth_items:
-        if _title_match(ntitle, item["_net"]) and year_ok(item["year"]):
-            return {"item": item, "score": 1.0, "title_score": 1.0}
-
-    # Pass 3 & 4: title match without year constraint (fallback)
-    for item in truth_items:
-        if _title_match(ntitle, item["_nen"]):
-            return {"item": item, "score": 1.0, "title_score": 1.0}
+    best = None
+    best_score = None
 
     for item in truth_items:
-        if _title_match(ntitle, item["_net"]):
-            return {"item": item, "score": 1.0, "title_score": 1.0}
+        for norm_t in (item["_nen"], item["_net"]):
+            if not norm_t or not ntitle:
+                continue
 
-    return None
+            if ntitle == norm_t:
+                title_score = 2
+            elif _title_match(ntitle, norm_t):
+                title_score = 1
+            else:
+                continue
+
+            score = (title_score, year_score(item["year"]), -abs(len(ntitle) - len(norm_t)))
+
+            if best_score is None or score > best_score:
+                best_score = score
+                best = item
+
+    if best is None:
+        return None
+
+    return {"item": best, "score": best_score[0] / 2.0, "title_score": best_score[0]}
 
 
 def safe_filename(name: str) -> str:
@@ -105,7 +126,13 @@ def safe_filename(name: str) -> str:
 
 
 def truth_filename(item, extension: str) -> str:
-    name = f"{item['estonian']} ({item['year']}) [{item['english']}]"
+    name = item["estonian"]
+    if item["year"]:
+        name += f" ({item['year']})"
+    if item["english"]:
+        name += f" [{item['english']}]"
+    if item["tmdb_id"]:
+        name += f" {{tmdb-{item['tmdb_id']}}}"
     return safe_filename(name) + extension
 
 
@@ -186,6 +213,38 @@ def show_status(matches, missing_truth, extra_files):
         print(file_info["path"].name)
 
 
+def truth_line_from_file(file_info) -> str:
+    return unicodedata.normalize("NFC", file_info["path"].stem).strip()
+
+
+def offer_add_extra_files_to_truth(extra_files, truth_file):
+    if not extra_files:
+        return
+
+    lines = [truth_line_from_file(file_info) for file_info in extra_files]
+
+    print(f"\n{len(lines)} FILMI POLE NIMEKIRJAS")
+    print("=" * 80)
+    for line in lines:
+        print(line)
+
+    add_missing = (
+        input(f"\nLisa need {len(lines)} filmi nimekirja? (jah/ei): ")
+        .strip()
+        .lower()
+        .startswith("j")
+    )
+
+    if not add_missing:
+        return
+
+    with open(truth_file, "a", encoding="utf-8") as f:
+        for line in lines:
+            f.write(f"\n{line}")
+
+    print(f"Lisatud {len(lines)} filmi: {truth_file}")
+
+
 def build_rename_plan(matches):
     plan = []
     for file_info, match in matches:
@@ -237,17 +296,7 @@ def dry_run_rename(matches):
         .startswith("j")
     )
 
-    if not do_rename:
-        return
-
-    confirmed = (
-        input(f"Kinnita: nimeta {len(plan)} faili ümber? (jah/ei): ")
-        .strip()
-        .lower()
-        .startswith("j")
-    )
-
-    if confirmed:
+    if do_rename:
         perform_rename(plan)
 
 
@@ -312,6 +361,7 @@ def main():
         print(f"{len(missing_truth)} Filmi puudu")
         print(f"{len(extra_files)} Filmid mis pole nimekirjas")
         print(f"{wrong_name} Filmi mille pealkiri on nimekirjast erinev")
+        offer_add_extra_files_to_truth(extra_files, truth_file)
 
     elif choice == "2":
         print("\nFaili formaat: Eesti pealkiri (Aasta) [English title]")
@@ -321,6 +371,7 @@ def main():
         print("Võrdlemine nimekirjaga...")
         matches, missing_truth, extra_files = build_matches(movie_files, truth_items)
         dry_run_rename(matches)
+        offer_add_extra_files_to_truth(extra_files, truth_file)
 
     else:
         print("Invalid choice")
