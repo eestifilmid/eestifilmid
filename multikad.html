@@ -191,7 +191,6 @@
   <a href="https://github.com/eestifilmid/eestifilmid" target="_blank" rel="noopener noreferrer">eestifilmid/eestifilmid</a>
 </footer>
 <script>
-  const IMG_BASE = "https://image.tmdb.org/t/p/w300";
   const DATA_URL = "https://raw.githubusercontent.com/eestifilmid/eestifilmid/refs/heads/main/multikad.txt";
   const LINE_RE = /^(.*?)\s*\((\d{4})\)\s*\[(.*?)\]\s*\{tmdb-(\d+)\}\s*$/;
 
@@ -225,61 +224,6 @@
     return movies;
   }
 
-  function posterCacheGet(id) {
-    try {
-      const raw = localStorage.getItem("tmdb_poster_" + id);
-      return raw === null ? undefined : raw;
-    } catch (e) {
-      return undefined;
-    }
-  }
-
-  function posterCacheSet(id, posterPath) {
-    try {
-      localStorage.setItem("tmdb_poster_" + id, posterPath || "");
-    } catch (e) {}
-  }
-
-  async function loadPoster(card) {
-    const id = card.dataset.tmdbId;
-    const img = card.querySelector("img");
-    const placeholder = card.querySelector(".poster-placeholder");
-
-    let posterPath = posterCacheGet(id);
-    if (posterPath === undefined) {
-      try {
-        const res = await fetch(`https://api.themoviedb.org/3/movie/${id}`);
-        const data = await res.json();
-        posterPath = data.poster_path || "";
-      } catch (e) {
-        posterPath = "";
-      }
-      posterCacheSet(id, posterPath);
-    }
-
-    if (posterPath) {
-      img.src = IMG_BASE + posterPath;
-      img.onload = () => {
-        img.classList.add("loaded");
-        placeholder.classList.add("hidden");
-      };
-      img.onerror = () => {
-        placeholder.textContent = card.dataset.titleEt;
-      };
-    } else {
-      placeholder.textContent = card.dataset.titleEt;
-    }
-  }
-
-  const observer = new IntersectionObserver((entries) => {
-    for (const entry of entries) {
-      if (entry.isIntersecting) {
-        loadPoster(entry.target);
-        observer.unobserve(entry.target);
-      }
-    }
-  }, { rootMargin: "200px" });
-
   function elisaSearchUrl(title) {
     return "https://elisaelamus.ee/search?term=" + encodeURIComponent(title).replace(/%20/g, "+");
   }
@@ -300,10 +244,10 @@
 
     wrap.innerHTML = `
       <a class="card-link" href="https://www.themoviedb.org/movie/${movie.tmdbId}" target="_blank" rel="noopener noreferrer">
-        <div class="card" data-tmdb-id="${movie.tmdbId}" data-title-et="${escapeHtml(movie.estonianTitle)}" data-search="${escapeHtml(searchText)}">
+        <div class="card" data-search="${escapeHtml(searchText)}">
           <div class="poster-wrap">
-            <div class="poster-placeholder">Laen...</div>
-            <img alt="${escapeHtml(movie.estonianTitle)}">
+            <div class="poster-placeholder">${escapeHtml(movie.estonianTitle)}</div>
+            <img src="posters/${movie.tmdbId}.jpg" alt="${escapeHtml(movie.estonianTitle)}" loading="lazy">
           </div>
           <div class="info">
             <p class="title-et">${escapeHtml(movie.estonianTitle)}</p>
@@ -323,6 +267,17 @@
         </a>
       </div>
     `;
+
+    const img = wrap.querySelector(".poster-wrap img");
+    const placeholder = wrap.querySelector(".poster-placeholder");
+    img.addEventListener("load", () => {
+      img.classList.add("loaded");
+      placeholder.classList.add("hidden");
+    });
+    img.addEventListener("error", () => {
+      img.remove();
+    });
+
     return wrap;
   }
 
@@ -351,7 +306,6 @@
     for (const movie of movies) {
       const wrap = createCard(movie);
       grid.appendChild(wrap);
-      observer.observe(wrap.querySelector(".card"));
     }
 
     updateCount();
