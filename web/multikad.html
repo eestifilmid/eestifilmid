@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <title>Multikad</title>
 <style>
   :root {
@@ -247,7 +247,7 @@
         <div class="card" data-search="${escapeHtml(searchText)}">
           <div class="poster-wrap">
             <div class="poster-placeholder">${escapeHtml(movie.estonianTitle)}</div>
-            <img src="posters/${movie.tmdbId}.jpg" alt="${escapeHtml(movie.estonianTitle)}" loading="lazy">
+            <img src="assets/posters/multikad/${movie.tmdbId}.jpg" alt="${escapeHtml(movie.estonianTitle)}" loading="lazy">
           </div>
           <div class="info">
             <p class="title-et">${escapeHtml(movie.estonianTitle)}</p>
@@ -257,13 +257,13 @@
       </a>
       <div class="icon-links">
         <a href="${elisaSearchUrl(movie.estonianTitle)}" target="_blank" rel="noopener noreferrer" title="Otsi Elisa Elamust">
-          <img src="elisa.jpg" alt="Elisa Elamus">
+          <img src="assets/elisa.jpg" alt="Elisa Elamus">
         </a>
         <a href="${go3SearchUrl(movie.estonianTitle)}" target="_blank" rel="noopener noreferrer" title="Otsi Go3-st">
-          <img src="go3.jpg" alt="Go3">
+          <img src="assets/go3.jpg" alt="Go3">
         </a>
         <a href="${teliaSearchUrl(movie.estonianTitle)}" target="_blank" rel="noopener noreferrer" title="Otsi Telia TV-st">
-          <img src="telia.jpg" alt="Telia TV">
+          <img src="assets/telia.jpg" alt="Telia TV">
         </a>
       </div>
     `;
